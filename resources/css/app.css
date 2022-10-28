@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: Signature;
+      font-display: swap;
+      font-weight: 400;
+      src: url("/assets/fonts/BrittanySignature.ttf");
+    }
+    @font-face {
+      font-family: Greenlight Script;
+      font-display: swap;
+      font-weight: 200;
+      src: url("/assets/fonts/GreenlightScript.ttf");
+    }
+    @font-face {
+      font-family: Nermola Script;
+      font-display: swap;
+      font-weight: 300;
+      src: url("/assets/fonts/NermolaScript.ttf");
+    }
+    @font-face {
+      font-family: Scarlet;
+      font-display: swap;
+      src: url("/assets/fonts/Scarletty.ttf");
+    }
+}
+
+@layer components {
+  .guestbook-form {
+    @apply tw-bg-gray-lighter tw-appearance-none tw-rounded tw-w-full tw-py-2 tw-px-4 tw-ring-opacity-20 focus:tw-ring-2 focus:tw-ring-brown-lighter focus:tw-outline-none focus:tw-bg-gray-100;
+  }
+}
